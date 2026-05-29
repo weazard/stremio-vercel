@@ -1,0 +1,5 @@
+node_modules/
+.vercel/
+# Downloaded at build time by scripts/fetch-server.js
+server.js
+.server-version

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "node scripts/fetch-server.js",
+  "functions": {
+    "api/server.js": {
+      "maxDuration": 60,
+      "includeFiles": "server.js"
+    }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/server" }
+  ]
+}
