@@ -1,0 +1,15 @@
+{
+  "name": "stremio-service-vercel",
+  "version": "0.1.21",
+  "private": true,
+  "description": "Stremio streaming server (server.js) reworked as a deployable Vercel app",
+  "license": "GPL-2.0",
+  "scripts": {
+    "fetch-server": "node scripts/fetch-server.js",
+    "build": "node scripts/fetch-server.js",
+    "dev": "node scripts/fetch-server.js && node scripts/dev.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

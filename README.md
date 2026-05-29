@@ -7,6 +7,15 @@
 - `default` features - none
 - `bundled` - uses binaries location for an installed(and bundled) application.
 
+## Deploy to Vercel
+
+The Stremio streaming server (`server.js`) can also be deployed as a serverless
+[Vercel](https://vercel.com) app — see [`vercel/`](vercel/README.md). It runs the
+same `server.js` this desktop service launches, behind a Vercel function, and
+exposes the deployment URL as a streaming server for Stremio clients. Note the
+serverless [limitations](vercel/README.md#serverless-limitations) (no bundled
+ffmpeg, no persistent transcoding/torrents).
+
 ## Download
 
 You can find the Stremio Service packages in the [releases asset files](https://github.com/Stremio/stremio-service/releases) or by using one of the following urls:
